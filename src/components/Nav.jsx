@@ -1,19 +1,19 @@
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 shadow-lg px-4 fixed z-10">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">ByteBlaze</a>
+        <a className="btn btn-ghost gap-0 text-secondary text-2xl">Byte<span className="text-primary">Blaze</span></a>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Home</a>
+            <a className="text-lg font-medium">Home</a>
           </li>
           <li>
-            <a>Blogs</a>
+            <a className="text-primary text-lg font-medium">Blogs</a>
           </li>
           <li>
-            <a>Bookmarks</a>
+            <a className="text-lg font-medium">Bookmarks</a>
           </li>
         </ul>
         <label className="cursor-pointer grid place-items-center">
