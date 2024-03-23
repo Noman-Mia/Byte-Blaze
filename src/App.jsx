@@ -1,13 +1,14 @@
 
 import './App.css'
-import Navbar from './components/Nav'
 import Home from './pages/Home'
-
+import Blogs from './pages/Blogs'
+import Bookmarks from './pages/Bookmarks'
 function App() {
   return (
     <>
-      <Navbar></Navbar>
       <Home></Home>
+      <Blogs></Blogs>
+      <Bookmarks></Bookmarks>
     </>
   )
 }
