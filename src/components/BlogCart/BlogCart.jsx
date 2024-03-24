@@ -7,7 +7,7 @@ const BlogCart = ({blog}) => {
             <Link
             to = {`/blog/${id}`}
               rel="noopener noreferrer"
-              className="max-w-sm transition  mx-auto group hover:no-underline focus:no-underline bg-gray-900"
+              className="max-w-sm transition text-black mx-auto group hover:no-underline focus:no-underline bg-gray-900"
             >
               <img
                 role="presentation"
@@ -15,11 +15,11 @@ const BlogCart = ({blog}) => {
                 src={cover_image || placeholderImage}
               />
               <div className="p-6 space-y-2">
-                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
+                <h3 className="text-2xl text-black font-semibold group-hover:underline group-focus:underline">
                  {title}
                 </h3>
-                <span className="text-xs text-gray-400">{new Date(published_at).toLocaleDateString()}</span>
-                <p>
+                <span className="text-xs text-black">{new Date(published_at).toLocaleDateString()}</span>
+                <p className="text-black">
                  {description}
                 </p>
               </div>
