@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import placeholderImages from '../assets/404.jpg'
 const Content = () => {
     const blog = useLoaderData()
-    const {cover_image, title, description, published_at,tags} = blog
+    const {cover_image, title, description, published_at,tags,body_html} = blog
     return (
         <div
           rel="noopener noreferrer"
@@ -23,7 +23,12 @@ const Content = () => {
 		</div>
 		
 	</div>
-          
+          <div className="">
+            <h3 className="text-2xl text-black font-semibold group-hover:underline group-focus:underline">
+             {title}
+            </h3>
+            {/* {body_html} */}
+          </div>
         </div>
     );
 };

@@ -1,4 +1,4 @@
-
+import  { Toaster } from 'react-hot-toast';
 import ReactDOM from 'react-dom/client'
 import './index.css' 
 import {
@@ -54,5 +54,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
     <RouterProvider router={router} />
+    <Toaster></Toaster>
   </>,
 )
